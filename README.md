@@ -62,9 +62,99 @@ A. Use-case Diagram
 
 <img width="735" height="688" alt="image" src="https://github.com/user-attachments/assets/bdf7ed1e-07a3-4afd-ae03-06e62525164c" />
 
+
+
 B. Flowchart 
 
 <img width="983" height="833" alt="image" src="https://github.com/user-attachments/assets/f1f3d821-019b-4ad4-b5b9-d0ace8ef6868" />
+
+
+
+C. Sequence Diagram
+
+
+<img width="654" height="777" alt="image" src="https://github.com/user-attachments/assets/785b3b3f-5d4f-4008-acc3-1e23e26e6695" />
+
+
+
+#7. Pseudocode
+--
+
+BEGIN VTS
+
+    // 1. Employee accesses the system
+    Validate employee login data
+
+    IF employee is authenticated THEN
+        DISPLAY vacation requests
+        DISPLAY leave balances
+        DISPLAY calander
+    ELSE
+        DISPLAY "invalid credentials"
+        STOP
+    END IF
+
+    // 2. Employee chooses an action
+    INPUT action
+
+    IF action = "Manage Time" THEN
+
+        DISPLAY available leave categories
+        INPUT leave category
+        INPUT requested dates
+        INPUT hours per date
+        INPUT request title
+        INPUT request description
+
+        // 3. Validate the request
+        VALIDATE request information
+        CHECK leave balance
+        CHECK vacation rules
+
+        IF request is invalid THEN
+            DISPLAY validation errors
+            ASK employee to correct or cancel request
+
+            IF employee chooses to correct THEN
+                RETURN TO request information
+            ELSE
+                CANCEL request
+            END IF
+
+        ELSE
+            SAVE vacation time request
+
+            IF manager approval is required THEN
+                SET request status = "Pending Approval"
+                SEND email to authorized manager(s)
+
+                // 4. Manager reviews the request
+                INPUT manager decision
+
+                IF manager decision = "Approve" THEN
+                    SET request status = "Approved"
+                    SEND email notification to employee
+
+                ELSE
+                    INPUT rejection reason
+                    SET request status = "Rejected"
+                    SAVE rejection reason
+                    SEND email notification to employee
+                END IF
+
+            ELSE
+                SET request status according to system rules
+            END IF
+
+            DISPLAY updated VTS home page
+        END IF
+
+     DISPLAY updated requests and leave balances
+
+END VTS
+
+
+
 
 
 
