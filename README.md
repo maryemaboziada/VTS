@@ -50,6 +50,7 @@ D. System Admin requirements:
 - Employee can apply leave up to the next 18 months
 
 #6. Diagrams
+--
 A. Use-case Diagram 
 
 <img width="735" height="688" alt="image" src="https://github.com/user-attachments/assets/bdf7ed1e-07a3-4afd-ae03-06e62525164c" />
