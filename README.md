@@ -2,10 +2,12 @@
 **Vacation tracking system**
 
 # 1. Vision
+--
 A Vacation Tracking System (VTS) will provide individual employees with the capability to manage their own vacation time, sick leave, and personal time off, without having to be an expert in company policy or the local facility’s leave policies.The most important goal of this system is to give individual employees the capability and responsibility to manage this particular aspect of their employment 
 agreements with the company. 
 
 #2. Actors 
+--
 The system contains the following actors.
 
 - Employee: The main user of this system. An employee uses this system to manage his or her vacation time. 
@@ -13,7 +15,10 @@ The system contains the following actors.
 - Clerk: A member of the HR department who has sufficient rights to view employees’ personal data and is responsible for ensuring that employees’ information in all HR systems is up to date and correct.
 - System Admin: A role responsible for the smooth running of the system’s technical resources 
 
+-- 
+
 #3. Functional Requirements 
+--
 
 A. Employee requirements:
 - FR-1 : Employee can login to the system using the portal
@@ -39,12 +44,14 @@ D. System Admin requirements:
 - FR-15 : System admin can backup data from the system logs
 
 #4. Non-Functional Requirements 
+--
 - NFR-1 : System should have friendly and easy to use interface 
 - NFR-2 : System should have strong security system to ensure employee can access only the valid records 
 - NFR-3 : System must handle many requests in peak time efficiency
 - NFR-4 : system shall have a calendar to help employees track leaves 
 
 #5. Constrains 
+--
 - System must integrate with HR legacy system
 - The system shall use the company's existing SSO infrastructure
 - Employee can apply leave up to the next 18 months
@@ -54,6 +61,11 @@ D. System Admin requirements:
 A. Use-case Diagram 
 
 <img width="735" height="688" alt="image" src="https://github.com/user-attachments/assets/bdf7ed1e-07a3-4afd-ae03-06e62525164c" />
+
+B. Flowchart 
+
+<img width="983" height="833" alt="image" src="https://github.com/user-attachments/assets/f1f3d821-019b-4ad4-b5b9-d0ace8ef6868" />
+
 
 
 
