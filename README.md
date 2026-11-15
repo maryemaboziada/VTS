@@ -103,6 +103,9 @@ C. Sequence Diagram
 
 3- Cancel Or Withdraw Request 
 
+<img width="854" height="778" alt="image" src="https://github.com/user-attachments/assets/81000262-4842-4c07-ac58-79363484aa6f" />
+
+
 
 #7. Pseudocode
 --
