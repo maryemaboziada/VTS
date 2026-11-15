@@ -83,7 +83,7 @@ B. Flowchart
 
 2- Cancel, Edit or Withdraw Applied Requests
 
-<img width="626" height="825" alt="image" src="https://github.com/user-attachments/assets/97b2f33d-4120-417f-982f-56f1945585d9" />
+<img width="623" height="834" alt="image" src="https://github.com/user-attachments/assets/09dfe30d-1e11-4bc5-b735-04b4c175b36c" />
 
 
 
