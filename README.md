@@ -64,15 +64,24 @@ A. Use-case Diagram
 
 
 
-B. Flowchart
+B. Flowchart 
 
-1- Employee Mode
+1- Apply New request:
+
+- Employee Mode
 
 <img width="983" height="833" alt="image" src="https://github.com/user-attachments/assets/f1f3d821-019b-4ad4-b5b9-d0ace8ef6868" />
 
-2- Manager Mode 
+- Manager Mode 
 
 <img width="937" height="742" alt="image" src="https://github.com/user-attachments/assets/564065c8-a426-4648-aa18-d9d77c120152" />
+
+2- Cancel, Edit or Withdraw Applied Requests
+
+<img width="626" height="825" alt="image" src="https://github.com/user-attachments/assets/97b2f33d-4120-417f-982f-56f1945585d9" />
+
+
+
 
 
 C. Sequence Diagram
