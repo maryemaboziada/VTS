@@ -64,7 +64,7 @@ A. Use-case Diagram
 
 
 
-B. Flowchart 
+B. Flowcharts
 
 1- Apply New request:
 
@@ -89,7 +89,7 @@ B. Flowchart
 
 
 
-C. Sequence Diagram
+C. Sequence Diagrams
 
 
 1- Apply New Request
@@ -101,9 +101,18 @@ C. Sequence Diagram
 
 <img width="558" height="786" alt="image" src="https://github.com/user-attachments/assets/e6cd4074-d063-466c-af0a-dc0db4f23985" />
 
+
+
 3- Cancel Or Withdraw Request 
 
 <img width="854" height="778" alt="image" src="https://github.com/user-attachments/assets/81000262-4842-4c07-ac58-79363484aa6f" />
+
+
+
+D. State Machine Diagram
+
+<img width="709" height="598" alt="image" src="https://github.com/user-attachments/assets/487fdb48-3bda-406c-ae31-cf0eea549f81" />
+
 
 
 
