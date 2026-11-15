@@ -68,13 +68,18 @@ B. Flowchart
 
 1- Apply New request:
 
+
 - Employee Mode
 
 <img width="983" height="833" alt="image" src="https://github.com/user-attachments/assets/f1f3d821-019b-4ad4-b5b9-d0ace8ef6868" />
 
+
+
 - Manager Mode 
 
 <img width="937" height="742" alt="image" src="https://github.com/user-attachments/assets/564065c8-a426-4648-aa18-d9d77c120152" />
+
+
 
 2- Cancel, Edit or Withdraw Applied Requests
 
@@ -86,6 +91,8 @@ B. Flowchart
 
 C. Sequence Diagram
 
+
+1- Apply New Request
 
 <img width="654" height="777" alt="image" src="https://github.com/user-attachments/assets/785b3b3f-5d4f-4008-acc3-1e23e26e6695" />
 
