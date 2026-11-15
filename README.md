@@ -152,7 +152,7 @@ BEGIN VTS
     // 2. Employee chooses an action
     INPUT action
 
-    IF action = "Manage Time" THEN
+    Iaction = "Manage Time" 
 
         DISPLAY available leave categories
         INPUT leave category
