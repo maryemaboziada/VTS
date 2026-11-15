@@ -58,11 +58,13 @@ D. System Admin requirements:
 
 #6. Diagrams
 --
+
 A. Use-case Diagram 
 
 <img width="735" height="688" alt="image" src="https://github.com/user-attachments/assets/bdf7ed1e-07a3-4afd-ae03-06e62525164c" />
 
 
+--
 
 B. Flowcharts
 
@@ -87,6 +89,7 @@ B. Flowcharts
 
 
 
+--
 
 
 C. Sequence Diagrams
@@ -108,13 +111,26 @@ C. Sequence Diagrams
 <img width="854" height="778" alt="image" src="https://github.com/user-attachments/assets/81000262-4842-4c07-ac58-79363484aa6f" />
 
 
+--
 
 D. State Machine Diagram
 
 <img width="709" height="598" alt="image" src="https://github.com/user-attachments/assets/487fdb48-3bda-406c-ae31-cf0eea549f81" />
 
+--
+
+E. UI View
+
+1- Employee View 
+
+<img width="1049" height="796" alt="image" src="https://github.com/user-attachments/assets/a604cf15-b0d9-411d-8d64-82f252952fff" />
+
+2- Manager View 
+
+<img width="1044" height="691" alt="image" src="https://github.com/user-attachments/assets/3fd8e2d2-5021-4740-b507-6170be5190c2" />
 
 
+--
 
 #7. Pseudocode
 --
