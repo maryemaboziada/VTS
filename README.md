@@ -97,6 +97,12 @@ C. Sequence Diagram
 <img width="654" height="777" alt="image" src="https://github.com/user-attachments/assets/785b3b3f-5d4f-4008-acc3-1e23e26e6695" />
 
 
+2- Edit Applied Request 
+
+<img width="558" height="786" alt="image" src="https://github.com/user-attachments/assets/e6cd4074-d063-466c-af0a-dc0db4f23985" />
+
+3- Cancel Or Withdraw Request 
+
 
 #7. Pseudocode
 --
