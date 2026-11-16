@@ -203,7 +203,6 @@ F. UI View
             SET request status to "Request Approved"
         END IF           
 
-END 
 
 2- Edit, Cancel or Withdraw Applied Request
 
