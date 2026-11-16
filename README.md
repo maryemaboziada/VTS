@@ -119,7 +119,13 @@ D. State Machine Diagram
 
 --
 
-E. UI View
+E. ERD 
+
+<img width="1011" height="779" alt="image" src="https://github.com/user-attachments/assets/9acc942e-e148-41d5-9225-a890438d0176" />
+
+-- 
+
+F. UI View
 
 1- Employee View 
 
