@@ -136,7 +136,6 @@ E. UI View
 --
 
 1- Login And Add New Request
-BEGIN VTS
 
     // 1. Employee accesses the system
     
@@ -160,40 +159,94 @@ BEGIN VTS
         INPUT request title
         INPUT request description
 
-        // 3. Validate the request
+    // 3. Validate the request
         
-        VALIDATE request information
-        CHECK leave balance
-        CHECK vacation rules
-        IF request is invalid THEN
-            DISPLAY validation errors
-            ASK employee to correct or cancel request
-        END IF
+    VALIDATE request information
+    CHECK leave balance
+    CHECK vacation rules
+    IF request is invalid THEN
+        DISPLAY validation errors
+        ASK employee to correct or cancel request
+    END IF
 
-        ELSE
-            SAVE vacation time request
+    ELSE
+        SAVE vacation time request
 
-            IF manager approval is required THEN
-                SET request status = "Pending Approval"
-                SEND email to authorized manager(s)
+    IF manager approval is required THEN
+    SET request status = "Pending Approval"
+    SEND email to authorized manager(s)
 
-                // 4. Manager reviews the request
+    // 4. Manager reviews the request
                 
-                INPUT manager decision
-                IF manager decision = "Approve" THEN
-                    SET request status = "Approved"
-                    SEND email notification to employee
-                ELSE
-                    INPUT rejection reason
-                    SET request status = "Rejected"
-                    SAVE rejection reason
-                    SEND email notification to employee
-                END IF
-            ELSE
-                SET request status to "Request Approved"
-            END IF           
+    INPUT manager decision
+        IF manager decision = "Approve" THEN
+            SET request status = "Approved"
+            SEND email notification to employee
+        ELSE
+            INPUT rejection reason
+            SET request status = "Rejected"
+            SAVE rejection reason
+            SEND email notification to employee
+        END IF
+        ELSE
+            SET request status to "Request Approved"
+        END IF           
 
-END VTS
+END 
+
+2- Edit, Cancel or Withdraw Applied Request
+
+ ```
+  // 1. Employee accesses the system
+    
+    Validate employee login data
+    IF employee is authenticated THEN
+        DISPLAY vacation requests
+        DISPLAY leave balances
+        DISPLAY calander
+    ELSE
+        DISPLAY "invalid credentials"
+        STOP
+    END IF
+
+ // 2. Employee edit the request
+    DISPLAY all applied leave
+    IF request is pending on manager approval
+       DISPLAY request details
+       DISPLAY edit button 
+       DISPLAY withdraw button
+    ELSE 
+       DISPLAY "Cancel Request"
+    END IF
+
+    IF Employee entered edit button
+       DISPLAY editable fields
+
+       VALIDATE request information
+          CHECK leave balance
+          CHECK vacation rules
+      IF request is invalid THEN
+          DISPLAY validation errors
+      ELSE
+          DISPLAY " Request Updated Successfully "
+          SET request status to "Request Pending"
+          SEND email to authorized manager(s)
+      END IF
+
+      ELSE IF Employee entered withdraw button
+          INPUT  withdraw reason
+          SET request status to "Request Pending"
+          SEND email to authorized manager(s)
+
+      ELSE IF Employee entered cancel request
+          INPUT  Cancellation reason
+          SET request status to "Cancellation Pending"
+          SEND email to authorized manager(s)
+   END IF
+
+```
+END
+    
 
 
 
