@@ -123,6 +123,11 @@ E. ERD
 
 <img width="1011" height="779" alt="image" src="https://github.com/user-attachments/assets/9acc942e-e148-41d5-9225-a890438d0176" />
 
+--> Updated ERD
+
+<img width="1030" height="790" alt="image" src="https://github.com/user-attachments/assets/a006b647-81d7-4dce-8943-a213a646a33f" />
+
+
 -- 
 
 F. UI View
