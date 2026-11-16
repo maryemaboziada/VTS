@@ -135,11 +135,12 @@ E. UI View
 #7. Pseudocode
 --
 
+1- Login And Add New Request
 BEGIN VTS
 
     // 1. Employee accesses the system
+    
     Validate employee login data
-
     IF employee is authenticated THEN
         DISPLAY vacation requests
         DISPLAY leave balances
@@ -149,11 +150,9 @@ BEGIN VTS
         STOP
     END IF
 
-    // 2. Employee chooses an action
-    INPUT action
-
-    Iaction = "Manage Time" 
-
+    // 2. Employee apply new request 
+    
+    INPUT Leave Request 
         DISPLAY available leave categories
         INPUT leave category
         INPUT requested dates
@@ -162,19 +161,14 @@ BEGIN VTS
         INPUT request description
 
         // 3. Validate the request
+        
         VALIDATE request information
         CHECK leave balance
         CHECK vacation rules
-
         IF request is invalid THEN
             DISPLAY validation errors
             ASK employee to correct or cancel request
-
-            IF employee chooses to correct THEN
-                RETURN TO request information
-            ELSE
-                CANCEL request
-            END IF
+        END IF
 
         ELSE
             SAVE vacation time request
@@ -184,27 +178,20 @@ BEGIN VTS
                 SEND email to authorized manager(s)
 
                 // 4. Manager reviews the request
+                
                 INPUT manager decision
-
                 IF manager decision = "Approve" THEN
                     SET request status = "Approved"
                     SEND email notification to employee
-
                 ELSE
                     INPUT rejection reason
                     SET request status = "Rejected"
                     SAVE rejection reason
                     SEND email notification to employee
                 END IF
-
             ELSE
-                SET request status according to system rules
-            END IF
-
-            DISPLAY updated VTS home page
-        END IF
-
-     DISPLAY updated requests and leave balances
+                SET request status to "Request Approved"
+            END IF           
 
 END VTS
 
